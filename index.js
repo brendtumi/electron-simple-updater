@@ -158,7 +158,7 @@ class SimpleUpdater extends events.EventEmitter {
         if (updateMeta) {
           this.onFoundUpdate(updateMeta);
         } else {
-          opt.logger.info(
+          opt.logger.verbose(
             `Update for ${this.buildId} is not available`
           );
           /**
